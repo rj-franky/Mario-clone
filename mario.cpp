@@ -13,7 +13,7 @@
 			create menu
 			
 	05/21/2024:	Added camera follows player
-				Added background environment to properly visualize camera movement
+			Added background environment to properly visualize camera movement
 				
 */
 #include"raylib.h"
@@ -31,10 +31,10 @@ int main(){
 	
 	//camera setup
 	Camera2D camera = { 0 };
-    camera.target = (Vector2){mario.position.x + 20, mario.position.y + 20};
-    camera.offset = (Vector2){GetScreenWidth()/2.0f, GetScreenHeight()/2.0f };
-    camera.rotation = 0.0;
-    camera.zoom = 1.0;
+    	camera.target = (Vector2){mario.position.x + 20, mario.position.y + 20};
+    	camera.offset = (Vector2){GetScreenWidth()/2.0f, GetScreenHeight()/2.0f };
+    	camera.rotation = 0.0;
+   	 camera.zoom = 1.0;
 	
 	//Main Loop
 	while (!WindowShouldClose())
